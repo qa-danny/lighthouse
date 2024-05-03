@@ -1,10 +1,9 @@
 module.exports = {
   ci: {
       collect: {
-        emulatedFormFactor: 'desktop',
-        disableDeviceEmulation: true,
-        disableCpuThrottling: true,
-        disableNetworkThrottling: true,
+        settings: {
+          preset: 'desktop'
+        },
         url: ['https://www.zappos.com/cart'],
       },
       upload: {
