@@ -4,6 +4,7 @@
   "description": "adding github action lighthouse",
   "main": "lighthouserc.js",
   "scripts": {
+    "lhci": "lhci autorun",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/qa-danny/lighthouse#readme",
   "devDependencies": {
-    "lighthouse-ci": "^1.13.1"
+    "@lhci/cli": "^0.13.0",
+    "@lhci/server": "^0.13.0",
+    "lighthouse-ci": "^1.13.1",
+    "sqlite3": "^5.1.7"
   }
 }

@@ -1,7 +1,11 @@
 module.exports = {
   ci: {
       collect: {
-        url: ['http://www.zappos.com/cart'],
+        emulatedFormFactor: 'desktop',
+        disableDeviceEmulation: true,
+        disableCpuThrottling: true,
+        disableNetworkThrottling: true,
+        url: ['https://www.zappos.com/cart'],
       },
       upload: {
         target: 'temporary-public-storage',
