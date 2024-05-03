@@ -1,7 +1,10 @@
 module.exports = {
   ci: {
       collect: {
-        url: ['http://www.zappos.com/cart'],
+        settings: {
+          preset: 'desktop'
+        },
+        url: ['https://www.zappos.com/cart'],
       },
       upload: {
         target: 'temporary-public-storage',
